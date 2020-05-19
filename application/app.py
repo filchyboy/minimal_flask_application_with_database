@@ -15,5 +15,6 @@ def create_app():
     
     @app.route('/')
     def root():
-        return render_template("home.html")
+        return render_template("home.html", title = 
+        "Minimal Flask Application with SQLAlchemy")
     return app
